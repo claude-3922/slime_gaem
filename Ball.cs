@@ -30,11 +30,11 @@ namespace game {
         }
 
         //Picked up?
-        public bool isPickedUp() {
+        public bool IsPickedUp() {
            return pickedBool;
         }
-        public void pickUp() {
-            pickedBool = true;
+        public void Ball_Is_Picked(bool state) {
+            pickedBool = state;
         }
     }
 }
