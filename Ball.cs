@@ -1,8 +1,10 @@
 using System.Numerics;
 using Raylib_cs;
 
-namespace game {
-    public class Ball : GameObject {
+namespace slime_gaem
+{
+    public class Ball : GameObject
+    {
         private bool pickedBool;
 
         public Ball(Image ballImage, Vector2 defaultPos) : base(ballImage, defaultPos)
@@ -11,10 +13,12 @@ namespace game {
         }
 
         //Picked up?
-        public bool IsPickedUp() {
-           return pickedBool;
+        public bool IsPickedUp()
+        {
+            return pickedBool;
         }
-        public void Ball_Is_Picked(bool state) {
+        public void Ball_Is_Picked(bool state)
+        {
             pickedBool = state;
         }
     }
